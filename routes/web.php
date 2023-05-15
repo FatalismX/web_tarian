@@ -1,5 +1,5 @@
 <?php
-use App\Http\Controllers\TariIndonesiaController;
+use App\Http\Controllers\PulauIndonesiaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TariIndonesiaController::class, 'index' ] );
-Route::get('/tambah', [TariIndonesiaController::class, 'tambah' ] );
-Route::post('/tambah', [TariIndonesiaController::class, 'store' ] );
-Route::get('/hapus/{id}', [TariIndonesiaController::class, 'hapus' ] );
-Route::get('/edit/{id}', [TariIndonesiaController::class, 'edit' ] );
-Route::post('/edit/{id}', [TariIndonesiaController::class, 'update' ] );
-Route::get('/lihat/{id}', [TariIndonesiaController::class, 'lihat' ] );
+Route::get('/', [PulauIndonesiaController::class, 'index' ] );
+Route::get('/tambah', [PulauIndonesiaController::class, 'tambah' ] );
+Route::post('/tambah', [PulauIndonesiaController::class, 'store' ] );
+Route::get('/hapus/{id}', [PulauIndonesiaController::class, 'hapus' ] );
+Route::get('/edit/{id}', [PulauIndonesiaController::class, 'edit' ] );
+Route::post('/edit/{id}', [PulauIndonesiaController::class, 'update' ] );
+Route::get('/lihat/{id}', [PulauIndonesiaController::class, 'lihat' ] );

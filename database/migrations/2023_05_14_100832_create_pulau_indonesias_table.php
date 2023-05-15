@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tari_indonesias', function (Blueprint $table) {
+        Schema::create('pulau_indonesias', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('nama_tari');
-            $table->string('asal_daerah');
+            $table->string('nama_pulau');
+            $table->string('letak_geografis');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tari_indonesias');
+        Schema::dropIfExists('pulau_indonesias');
     }
 };

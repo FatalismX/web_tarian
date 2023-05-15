@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TariIndonesiaRequest extends FormRequest
+class PulauIndonesiaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,16 +24,16 @@ class TariIndonesiaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama_tari' => 'required',
-            'asal_daerah' => 'required',
+            'nama_pulau' => 'required',
+            'letak_geografis' => 'required',
         ];
     }
 
     public function messages()
     {
         return[
-            'nama_tari.required' => 'Nama Tarian tidak boleh kosong',
-            'asal_daerah.required' => 'Asal Daerah tidak boleh kosong',
+            'nama_pulau.required' => 'Nama Tarian tidak boleh kosong',
+            'letak_geografis.required' => 'Asal Daerah tidak boleh kosong',
         ];
     }
 }

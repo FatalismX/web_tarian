@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Tari Indonesia</title>
+    <title>Data Pulau Indonesia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <h2 class="text-center mt-2">Data Tari Indonesia</h2>
+    <h2 class="text-center mt-2">Data Pulau Indonesia</h2>
     <div class="container mt-3">
     <a href="/tambah"class="btn btn-primary">Tambah Data</a>
     <table class="table">
   <thead>
     <tr>
       <th scope="col">No</th>
-      <th scope="col">Nama Tarian</th>
-      <th scope="col">Asal Daerah</th>
+      <th scope="col">Nama Pulau</th>
+      <th scope="col">Letak Geografis</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
-    @foreach ($TariIndonesia as $item)
+    @foreach ($PulauIndonesia as $item)
     <tr>
       <th scope="row">{{ $loop->iteration }}</th>
-      <td>{{ $item->nama_tari }}</td>
-      <td>{{ $item->asal_daerah }}</td>
+      <td>{{ $item->nama_pulau }}</td>
+      <td>{{ $item->letak_geografis }}</td>
       <td>
       <a href="{{ '/lihat/'.$item->id }}"class="btn btn-info">Lihat</a>
       <a href="{{ '/edit/'.$item->id }}"class="btn btn-success">Edit</a>

@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tambah Tari Indonesia</title>
+    <title>Tambah Pulau Indonesia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <h2 class="text-center mt-2">Tambah Tari Indonesia</h2>
+    <h2 class="text-center mt-2">Tambah Pulau Indonesia</h2>
     <div class="container mt-3">
     <form action="/tambah" method="POST">
             @csrf
             <div class="mb-3">
-                <label for="nama_tari" class="form-label">Nama Tarian</label>
-                <input type="text" class="form-control @error('nama_tari') is-invalid @enderror" id="nama_tari" name="nama_tari">
-                @error('nama_tari')
+                <label for="nama_pulau" class="form-label">Nama Pulau</label>
+                <input type="text" class="form-control @error('nama_pulau') is-invalid @enderror" id="nama_pulau" name="nama_pulau">
+                @error('nama_pulau')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="asal_daerah" class="form-label">Asal Daerah</label>
-                <input type="text" class="form-control @error('asal_daerah') is-invalid @enderror" id="asal_daerah" name="asal_daerah">
-                @error('asal_daerah')
+                <label for="letak_geografis" class="form-label">Letak Geografis</label>
+                <input type="text" class="form-control @error('letak_geografis') is-invalid @enderror" id="letak_geografis" name="letak_geografis">
+                @error('letak_geografis')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
